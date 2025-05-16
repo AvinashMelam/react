@@ -7,7 +7,7 @@ import MultiplicationTable from "./programms/Table";
 
 const Home = () =>{
 
-    const questions = ["Even or Odd", "Factorial","Prime or Composite", "Palindrome", "Multiplication Table"];  
+    const questions = ["Even or Odd", "Factorial","Prime or Composite", "Palindrome", "Multiplication Table", "Another New Program"];  
     const [component_name, setComponentName] = useState(null);
 
     const handlelistItemClick = (event) => {
