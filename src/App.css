@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
+ body {
+            font-family: 'Inter', sans-serif; /* More modern font */
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c'); /* Replace with a relevant image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+        .container {
+            background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white container */
+            padding: 30px;
+            border-radius: 12px; /* Slightly more rounded corners */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+            width: 80%; /* Increased width for larger screens */
+            max-width: 600px; /* Maximum width for better readability on large screens */
+            text-align: center;
+            backdrop-filter: blur(4px);
+        }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+        .heading {
+            color: #2c3e50; /* Darker heading color */
+            font-size: 28px; /* Larger heading size */
+            margin-bottom: 25px; /* Increased margin */
+            font-weight: 700; /* Make the heading bold */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+        }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+        .list {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 30px; /* Increased margin */
+        }
 
-.App-link {
-  color: #61dafb;
-}
+        .list-item {
+            background-color: #e0f7fa; /* Very light cyan background for list items */
+            margin: 12px 0; /* Increased margin between items */
+            padding: 15px; /* Increased padding */
+            border-radius: 8px; /* Slightly more rounded corners */
+            font-size: 18px; /* Increased font size */
+            color: #0c4a6e; /* Darker text color for list items */
+            text-align: left; /* Align text to the left within list items */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to list items */
+            border: 1px solid #b7e0e4; /* Add a border */
+        }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+        .list-item:hover {
+            background-color: #b2ebf2; /* Slightly darker cyan on hover */
+            transform: translateY(-4px); /* Slight upward movement on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+        }
+
+        .paragraph {
+            font-size: 16px;
+            color: #555; /* Slightly darker paragraph color */
+            line-height: 1.7; /* Improved line height for better readability */
+            margin-bottom: 0; /* Removed default margin, let container handle it */
+            text-align: center; /* Center the paragraph */
+        }
